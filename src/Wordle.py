@@ -24,10 +24,10 @@ class Wordle:
         self.state = None
         self.qstate = [0] * self.n_letters
         self.tmp_qstate = [0] * self.n_letters
-        self.win = ''
+        self.win = False
         self.yellowlist = []
         
-    def try_word (self, guess):
+    def try_word(self, guess):
         # need to add a check for not doing anything if the word is already guessed correctly
         guess = guess.upper()
         self.state = None
@@ -53,7 +53,7 @@ class Wordle:
             # Check for number of non-None in greens list 
             if sum(bool(char) for char in self.greens) == self.n_letters:
                 self.state = True
-                self.win ='win'
+                self.win = True
                 print('victory! word is: ' + self.word) 
                 grn_sum = sum([x!=None for x in self.greens])
                 yel_sum = sum([x!=None for x in self.current_yellows])
@@ -73,7 +73,7 @@ class Wordle:
         
         if self.guess_counter == 0:
             self.state=True
-            self.win = 'lose'
+            self.win = False
             print("YOU LOSE-TOO MANY GUESSES")
             return grn_sum, yel_sum # return number of greens and number of yellows
         print('Greens:' + str(self.greens) + 
