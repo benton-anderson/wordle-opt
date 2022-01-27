@@ -1,0 +1,3 @@
+Distributions of total green letter probability (TGLP) versus number of unique letters in word. While it is advantageous to maximize new letters tried at each turn to gain more information about grays and yellows, a word with sufficiently high TGLP should not be avoided because it has less than 5 unique letters in it. 
+
+[This is consistent with our theory that greens are much better than grays/yellows]

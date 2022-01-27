@@ -1,0 +1,4 @@
+Figure X: Y-axis gives probability of each word generating at least one green letter as tested on 2315 word list. X-axis gives the log-likelihood of each word, calculated as if each letter were drawn from a categorical distribution for each letter position as given in [Figure X, my heatmap]. Higher values of log-likelihood mean that the word contains letters in positions with high probability. 
+
+
+[This figure can be used to discuss a method of generating a "best words list" distinct from the TGLP (total green letter probability)]

@@ -1,0 +1,1 @@
+Figure X: Proportion of each letter at given position in word, calculated on the 2315 possible solutions from Wordle. 
