@@ -79,7 +79,7 @@ class Wordle:
         if self.guess_counter == 0:
             self.state=True
             self.win = False
-            if not self.ben_mode: print("YOU LOSE-TOO MANY GUESSES")
+            # if not self.ben_mode: print("YOU LOSE-TOO MANY GUESSES")
             if self.ben_mode:
                 return self.ben_mode_return()
             else:
